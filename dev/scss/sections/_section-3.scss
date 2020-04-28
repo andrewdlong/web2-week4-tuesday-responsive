@@ -3,6 +3,41 @@
 ============= */
 #section-3{
 
+    @include xl {
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-3 .";
+    }
+
+    >div {
+        @include lg {
+            display: grid;
+            grid-template-columns: 40% auto;
+        }
+        @include xl {
+            grid-area: section-3;
+        } 
+        aside {
+            img{
+                width: 100%;
+            }
+        }
+        section {
+            display: grid;
+            grid-template-columns: 10px auto 10px;
+            grid-template-areas: ". section-3-inside .";
+
+            @include md {
+                grid-template-columns: 10% auto 10%;
+            }
+
+            >div {
+                grid-area: section-3-inside;
+            }
+
+        }
+
+    }
    
 
     

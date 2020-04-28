@@ -339,6 +339,16 @@ ul {
     justify-content: center;
     align-items: center; }
 
+.show-for-medium {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-medium {
+      display: block; } }
+.show-for-large {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-large {
+      display: block; } }
 /* =============
     Typography
 ============= */
@@ -377,6 +387,12 @@ footer {
     grid-area: footer; }
 
 /* =============
+    Section-1
+============= */
+#section-1 img {
+  width: 100%; }
+
+/* =============
     Section-2
 ============= */
 #section-2 {
@@ -387,7 +403,8 @@ footer {
     #section-2 {
       grid-template-columns: auto 1200px auto; } }
   #section-2 > div {
-    grid-area: section-2; }
+    grid-area: section-2;
+    text-align: center; }
     @media (min-width: 768px) {
       #section-2 > div #section-2-first {
         display: grid;
@@ -396,6 +413,8 @@ footer {
     @media (min-width: 768px) {
       #section-2 > div #section-2-first > div {
         grid-area: section-2-first; } }
+    #section-2 > div #section-2-first > div h1 {
+      color: #F8C832; }
     @media (min-width: 992px) {
       #section-2 > div #section-2-middle {
         display: grid;
@@ -433,15 +452,18 @@ footer {
   #section-3 > div {
     grid-area: section-3; } }
 
+#section-3 > div aside img {
+  width: 100%; }
+
 #section-3 > div section {
   display: grid;
   grid-template-columns: 10px auto 10px;
-  grid-template-areas: ". section-2 ."; }
+  grid-template-areas: ". section-3-inside ."; }
   @media (min-width: 768px) {
     #section-3 > div section {
       grid-template-columns: 10% auto 10%; } }
   #section-3 > div section > div {
-    grid-area: section-2; }
+    grid-area: section-3-inside; }
 
 /* =============
     Section-5
@@ -456,7 +478,8 @@ footer {
   #section-5 ul {
     grid-area: section-5;
     display: grid;
-    grid-gap: 20px; }
+    grid-gap: 20px;
+    grid-template-rows: repeat(5, 234px); }
     @media (min-width: 768px) {
       #section-5 ul {
         grid-template-columns: repeat(2, 1fr);
@@ -465,24 +488,39 @@ footer {
       #section-5 ul {
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: "gallery-1 gallery-5 gallery-2" "gallery-1 gallery-7 gallery-4" "gallery-6 gallery-3 gallery-4"; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-1 {
-        grid-area: gallery-1; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-2 {
-        grid-area: gallery-2; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-3 {
-        grid-area: gallery-3; } }
-    @media (min-width: 992px) {
-      #section-5 ul #gallery-4 {
-        grid-area: gallery-4; } }
-    @media (min-width: 992px) {
-      #section-5 ul #gallery-5 {
-        grid-area: gallery-5; } }
-    @media (min-width: 768px) {
-      #section-5 ul #gallery-6 {
-        grid-area: gallery-6; } }
+    #section-5 ul li {
+      background-size: cover;
+      height: 100%; }
+    #section-5 ul #gallery-1 {
+      background-image: url("../img/section-5/gallery-1.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-1 {
+          grid-area: gallery-1; } }
+    #section-5 ul #gallery-2 {
+      background-image: url("../img/section-5/gallery-2.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-2 {
+          grid-area: gallery-2; } }
+    #section-5 ul #gallery-3 {
+      background-image: url("../img/section-5/gallery-3.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-3 {
+          grid-area: gallery-3; } }
+    #section-5 ul #gallery-4 {
+      background-image: url("../img/section-5/gallery-4.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-4 {
+          grid-area: gallery-4; } }
+    #section-5 ul #gallery-5 {
+      background-image: url("../img/section-5/gallery-5.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-5 {
+          grid-area: gallery-5; } }
+    #section-5 ul #gallery-6 {
+      background-image: url("../img/section-5/gallery-6.jpg"); }
+      @media (min-width: 768px) {
+        #section-5 ul #gallery-6 {
+          grid-area: gallery-6; } }
     @media (min-width: 768px) {
       #section-5 ul #gallery-7 {
         grid-area: gallery-7; } }

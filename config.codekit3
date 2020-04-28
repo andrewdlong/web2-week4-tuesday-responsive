@@ -9,6 +9,16 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/deploy/css/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/deploy/css/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/deploy/img/footer/facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -39,6 +49,17 @@
 		"plM": 52780316221407,
 		"prP": 0
 		},
+	"/deploy/img/section-1/header_hero_image.jpg": {
+		"ft": 16384,
+		"iS": 180023,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/section-1/header_hero_image.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/deploy/img/section-2/Hero-2.jpg": {
 		"ft": 16384,
 		"iS": 247748,
@@ -58,7 +79,7 @@
 		"oAP": "/deploy/img/section-2/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-3/robot.jpg": {
@@ -69,7 +90,7 @@
 		"oAP": "/deploy/img/section-3/robot.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-4/hero.jpg": {
@@ -80,7 +101,7 @@
 		"oAP": "/deploy/img/section-4/hero.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/deploy/img/section-5/gallery-1.jpg": {
@@ -322,6 +343,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/dev/scss/sections/_section-1.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/dev/scss/sections/_section-1.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/dev/scss/sections/_section-2.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -413,6 +447,25 @@
 		"oA": 1,
 		"oAP": "/dev/section-5.html",
 		"oF": 0
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		}
 	},
 "hooks": [

@@ -2,5 +2,85 @@
     Section-5
 ============= */
 #section-5{
-    
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas: ". section-5 .";
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+    }
+
+    ul {
+        grid-area: section-5;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-rows: repeat(5, 234px);
+
+        @include md {
+            grid-template-columns: repeat(2, 1fr);
+            
+            grid-template-areas:
+                    "gallery-1 gallery-2"
+                    "gallery-1 gallery-7"
+                    "gallery-3 gallery-6";         
+        }
+
+        @include lg {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas:
+                    "gallery-1 gallery-5 gallery-2"
+                    "gallery-1 gallery-7 gallery-4"
+                    "gallery-6 gallery-3 gallery-4";
+
+        }
+
+        li {
+            background-size: cover;
+            height: 100%;
+        }
+
+        #gallery-1{
+            background-image: url('../img/section-5/gallery-1.jpg');
+            @include md {
+                grid-area: gallery-1;
+            }
+        }
+        #gallery-2{
+            background-image: url('../img/section-5/gallery-2.jpg');
+            @include md {
+                grid-area: gallery-2;
+            }
+        }
+        #gallery-3{
+            background-image: url('../img/section-5/gallery-3.jpg');
+            @include md {
+                grid-area: gallery-3;
+            }
+        }
+        #gallery-4{
+            background-image: url('../img/section-5/gallery-4.jpg');
+            @include md {
+                grid-area: gallery-4;
+            }
+        }
+        #gallery-5{
+            background-image: url('../img/section-5/gallery-5.jpg');
+            @include md {
+                grid-area: gallery-5;
+            }
+        }
+        #gallery-6{
+            background-image: url('../img/section-5/gallery-6.jpg');
+            @include md {
+                grid-area: gallery-6;
+            }
+        }
+        #gallery-7{
+            @include md {
+                grid-area: gallery-7;
+            }
+        }
+    }
+
+
 }
